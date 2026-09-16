@@ -1,0 +1,15 @@
+package com.orbit.ecommerce.dto;
+
+import lombok.Data;
+import java.util.List;
+
+@Data
+public class OrderItemRequest {
+    private Long productId;
+    private Integer quantity;
+}
+
+@Data
+public class OrderRequest {
+    private List<OrderItemRequest> items;
+}
